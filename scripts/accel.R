@@ -2,6 +2,7 @@
   library(tidyverse)
   library(readxl)
   library(janitor)
+  library(viridis)
   
   repeat.before = function(x) {   # repeats the last non NA value. Keeps leading NA
     ind = which(!is.na(x))        # get positions of nonmissing values
